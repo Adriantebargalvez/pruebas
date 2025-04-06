@@ -12,7 +12,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:4200',   // Para el navegador
       'http://10.0.2.2:4200',   // Para el emulador de Android
-      'http://localhost:8100',   // Para Ionic si estás usando este framework
+      'http://localhost:8100',// Para Ionic si estás usando este framework
       '*',                       // Para permitir todos los orígenes (útil en desarrollo)
     ],
   });
