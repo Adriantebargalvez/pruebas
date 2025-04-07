@@ -12,12 +12,15 @@ async function bootstrap() {
     origin: [
       'http://localhost:4200',   // Para el navegador
       'http://10.0.2.2:4200',   // Para el emulador de Android
-      'http://localhost:8100',// Para Ionic si estás usando este framework
-      '*',                       // Para permitir todos los orígenes (útil en desarrollo)
+      'http://localhost:8100',   // Para Ionic si usas este framework
+      'https://e7a3-45-149-183-194.ngrok-free.app', // Agrega el enlace de ngrok
+      '*', // Si deseas permitir todos los orígenes
     ],
   });
+  
   
 
   await app.listen(3000, '0.0.0.0');
 }
 bootstrap();
+
